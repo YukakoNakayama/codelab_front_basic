@@ -8,3 +8,14 @@
   font-size: 30px;
   color: rgb(238, 82, 82);
 }
+
+#modal {
+  position: fixed;
+  display: none;
+  width: 50%;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: #fff;
+  color: black;
+}
