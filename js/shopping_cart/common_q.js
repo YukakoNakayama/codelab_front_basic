@@ -31,24 +31,14 @@
   var TAXRATE = 8;
 
   btn.onclick = function(){
-    var result1 = [];
-    for (var i = 0; i < tablet.length; i++){
-      if (tablet[i].selected) {
-        result1.push(tablet[i].value);
-        var result1 = Number(tablet[i].value);
-      }
-    }
-    var tabTotal = result1*tabletPrice;
+    var result1 = tablet.selectedIndex;
+    console.log(result1);
+    var tabTotal = (result1+1)*tabletPrice;
     console.log(tabTotal);
 
-    var result2 = [];
-    for (var i = 0; i < pc.length; i++){
-      if (pc[i].selected) {
-        result2.push(pc[i].value);
-        var result2 = Number(pc[i].value);
-      }
-    }
-    var pcTotal = result2*pcPrice;
+    var result2 = pc.selectedIndex;
+    console.log(result2);
+    var pcTotal = (result2+1)*pcPrice;
     console.log(pcTotal);
 
     var subPrice = tabTotal + pcTotal;
