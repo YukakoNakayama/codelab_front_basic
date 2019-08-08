@@ -1,0 +1,587 @@
+@charset "utf-8";
+
+*  {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  /* background: #cdd8ed; */
+  /* color: #333; */
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  /* padding: 10px; */
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 3100px;
+  overflow-x: hidden;
+} 
+
+#mask {
+  /* background: rgb(3, 28, 81); */
+  /* opacity: .6; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.menuMoji {
+  font-size: 18px;
+  font-family: "Century Gothic";
+  position: absolute;
+  top: 30px;
+  right: 170px;
+}
+
+#menu {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -2000px;
+  color: black;
+  background: #DAD9DB;
+  padding: 80px;
+  width: 560px;
+  transition: .6s;
+  /* 固定＆メニュー内でスクロール */
+  position: fixed;
+  overflow-y: auto; 
+}
+
+#menu2 {
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#menuDe {
+  display: none;
+  margin-left: 15px;
+}
+
+.menu3 {
+  border-bottom: solid 1px black;
+  width: 175px;
+  margin-top: 25px;
+}
+
+.menu4 {
+  border-bottom: solid 1px black;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#menuDe ul li {
+  font-size: 12px;
+  margin-top: 10px;
+  padding-top: 0px;
+}
+
+#menu li {
+  padding-top: 20px;
+  list-style: none;
+}
+
+.me1 {
+  font-size: 10px;
+}
+
+#menu ul li p {
+  font-size: 25px;
+  font-family: serif;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/* #menu li + li {
+  border-top: 1px solid black;
+} */
+
+#open,
+#close {
+  position: absolute;
+  right: 80px;
+  top: 25px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+body.active {
+  overflow-x: hidden;
+}
+
+body.active #mask {
+  display: block;
+}
+
+body.active #menu {
+  right: 0;
+}
+
+header {
+  position: fixed;
+}
+
+.topImg img {
+  width: 120px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.subtitle {
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 367px;
+  left: 53px;
+  white-space: nowrap;
+}
+
+#corpotait {
+  position: relative;
+}
+
+.bgImg {
+  background-image: url("img/top_mv_pc.jpg");
+  background-size: 1107px 690px;
+  position: absolute;
+  top: 80px;
+  left: 210px;
+  width: 1107px;
+  height: 690px;
+  z-index: 1;
+}
+
+.corImgtext {
+  font-family: serif;
+  font-size: 45px;
+  background: white;
+  position: absolute;
+  top: 130px;
+  left: 1000px;
+  width: 70px;
+  height: 545px;
+  padding-right: 15px;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+}
+
+.message {
+  width: 900px;
+  font-size: 30px;
+  font-family: serif;
+  position: absolute;
+  top: 800px;
+  left: 210px;
+}
+
+.corDe {
+  position: absolute;
+  top: 900px;
+  left: 210px;
+  height: 1000px;
+  width: 700px;
+}
+
+#corDe1 {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#corDe2 {
+  /* opacity: 0; */
+  font-family: serif;
+  font-size: 25px;
+  line-height: 2em;
+  height: 1500px;
+  display: none;
+}
+
+#corDe2 h5 {
+  font-size: 30px;
+  margin: 75px 0;
+}
+
+.close2 {
+  font-size: 22px;
+  font-family: 'Century Gothic';
+  cursor: pointer;
+}
+
+#contents {
+  position: relative;
+  top: 1000px;
+  left: 200px;
+
+}
+
+#target {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 540px;
+}
+
+#target img {
+  width: 540px;
+  height: 540px;
+}
+
+#idea {
+  position: absolute;
+  top: 0px;
+  left: 570px;
+  width: 540px;
+}
+
+#idea img {
+  width: 540px;
+  height: 540px;
+}
+
+#project {
+  position: absolute;
+  top: 800px;
+  left: 0px;
+  width: 540px;
+}
+
+#project img {
+  width: 540px;
+  height: 540px;
+}
+
+#LUMINELine {
+  position: absolute;
+  top: 800px;
+  left: 570px;
+  width: 540px;
+}
+
+#LUMINELine img {
+  width: 540px;
+  height: 540px;
+}
+
+.Sub {
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  width: 350px;
+  font-size: 32px;
+  background: #EBEBEB;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: serif;
+}
+
+.De {
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+.More a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.More :hover {
+  margin-left: 10px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  left: 200px;
+  top: 3000px;
+  font-size: 15px;
+}
+
+.group {
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  border-bottom: solid 1px #D8D8D8;
+  width: 1100px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.group a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.group a {
+  text-decoration: none;
+  color: black;
+}
+
+.companyInfo {
+  position: absolute;
+  bottom: 130px;
+  left: 0;
+  width: 100%;
+}
+
+.companyInfo a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.companyInfo a {
+  text-decoration: none;
+  color: black;
+}
+
+.logoImg {
+  transform: rotate(-90deg);
+  height: 140px;
+  position: absolute;
+  bottom: 0px;
+  left: 32px;
+}
+
+.copyright {
+  font-size: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+}
+
+/* レスポンシブ */
+
+@media screen and (max-width:480px) {
+  #menu {
+    max-width: 100%;
+  }
+
+  .menuMoji {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+
+  #open {
+    right: 10px;
+  }
+
+  .bgImg {
+    background-image: url("img/top_mv_sp.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    max-width: 100%;
+  }
+
+  .topImg img {
+    width: 70px;
+    position: absolute;
+    top: 25px;
+    left: 8px;
+  }
+
+  header {
+    position: relative;
+  }
+  
+  .subtitle {
+    position: absolute;
+    top: 260px;
+    left: 25px;
+  }
+
+  .corImgtext {
+    font-size: 40px;
+    position: absolute;
+    top: 170px;
+    left: 250px;
+    width: 70px;
+    height: 500px;
+  }
+  
+  .message {
+    max-width: 100%;
+    font-size: 20px;
+    position: absolute;
+    top: 800px;
+    left: 10px;
+    padding-right: 10px;
+  }
+  
+  .corDe {
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    padding: 0 10px;
+    height: 1000px;
+    max-width: 100%;
+  }
+
+  #corDe2 {
+    font-size: 16px;
+  }
+
+  #contents {
+    position: relative;
+    top: 1000px;
+    left: 0px;
+  }
+  
+  #target {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+  }
+  
+  #target img {
+    max-width: 100%;
+  }
+  
+  #idea {
+    position: absolute;
+    top: 800px;
+    left: 0px;
+    max-width: 100%;
+  }
+  
+  #idea img {
+    max-width: 100%;
+  }
+  
+  #project {
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    max-width: 100%;
+  }
+  
+  #project img {
+    max-width: 100%;
+  }
+  
+  #LUMINELine {
+    position: absolute;
+    top: 2400px;
+    left: 0px;
+    max-width: 100%;
+  }
+  
+  #LUMINELine img {
+    max-width: 100%;
+  }
+  
+  .Sub {
+    font-size: 12px;
+    margin: 15px 20px;
+  }
+  
+  h3 {
+    width: 350px;
+    font-size: 32px;
+    background: #EBEBEB;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: serif;
+  }
+
+  .More {
+    padding: 0 20px;
+  }
+  
+  .De {
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    padding: 0 50px
+  }
+  
+  footer {
+    position: absolute;
+    max-width: 100%;
+    left: 0px;
+    top: 4700px;
+    font-size: 15px;
+  }
+  
+  .group {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    border-bottom: solid 1px #D8D8D8;
+    max-width: 80%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    display: inline-block;
+  }
+  
+  .group a:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .newoman {
+    position: absolute;
+    top: 0;
+    left: 118px;
+  }
+
+  .group a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .companyInfo {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    max-width: 100%;
+  }
+  
+  .companyInfo a:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .companyInfo a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-left: 50px;
+  }
+  
+  .logoImg {
+    height: 140px;
+    position: absolute;
+    bottom: -60px;
+    left: 80px;
+  }
+  
+  .copyright {
+    font-size: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+    max-width: 100%;
+  }
+}
